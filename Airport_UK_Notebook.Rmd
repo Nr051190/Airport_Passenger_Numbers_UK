@@ -10,3 +10,24 @@ editor_options:
 require(parallel)
 require(tidyverse)
 ```
+# The data is currently held on my computer. You can download this data from Kaggle (https://www.kaggle.com/datasets/mohamedalishiha/uk-air-travel-passengers)
+
+# Avoid making the file too big, as you may not have GitHub premium 
+```{r Load in the data}
+# Load in the data
+Airport_Data_UK <- read.csv("uk_air_passengers.csv")
+
+# There is an error in the dataframe, it cannot separate the values. We'll have to do it ourselves!
+# First lets create the vectors (variables) that we'll port the information into
+Airport_Data_UK_Modified <- Airport_Data_UK %>%
+  add_column(Passenger_numbers = NA,
+             Year = NA)
+  
+  
+add_co
+
+  vector(length = length(Airport_Data_UK$Date.month.year.weekdays.calendardays.weekends.Passengers))
+
+= length(Date.month.year.weekdays.calendardays.weekends.Passengers))
+```
+
